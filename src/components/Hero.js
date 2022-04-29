@@ -5,8 +5,8 @@ import { ImFilter } from "react-icons/im";
 const Hero = ({ showFilters, setShowFilters, showSponsored, setShowSponsored }) => {
     return (
         <div
-            className="
-    h-96 w-full bg-cover bg-center rounded-md overflow-hidden relative bg-slate-500"
+            className="mt-16
+    h-52 w-full bg-cover bg-center rounded-md overflow-hidden relative bg-slate-500"
         >
             <img
                 src={HEROIMAGE}
@@ -16,10 +16,6 @@ const Hero = ({ showFilters, setShowFilters, showSponsored, setShowSponsored }) 
             <div className="bg-gray-900 bg-opacity-60 flex items-center h-full absolute w-full z-10">
                 <div className="px-10 max-w-xl">
                     <h2 className="text-2xl text-white font-semibold">Tech Shirts</h2>
-                    <p className="mt-2 text-gray-400">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque atque recusandae
-                        ipsum odio possimus soluta!
-                    </p>
                     <div href={`/products`}>
                         <button
                             onClick={() => setShowSponsored(!showSponsored)}

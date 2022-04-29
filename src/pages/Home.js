@@ -22,8 +22,7 @@ const Home = () => {
     const [showSponsored, setShowSponsored] = useState(false);
     const [showFilters, setShowFilters] = useState(true);
 
-    const getProductsEndpoint =
-        "https://us-east-1.aws.data.mongodb-api.com/app/searchstore-zhtzd/endpoint/products";
+    const getProductsEndpoint = "https://data.mongodb-api.com/app/mongostoreapp-dnerj/endpoint/products";
 
     const getProducts = async () => {
         let data = {
@@ -40,11 +39,6 @@ const Home = () => {
             if (res.data.products.length !== 0) setShowResults(true);
         });
     };
-
-    useEffect(() => {
-        registerUser("test14@example.com", "password");
-        // addProduct();
-    });
 
     useEffect(() => {
         if (searchTerm !== "" && searchTerm.length > 2) {
