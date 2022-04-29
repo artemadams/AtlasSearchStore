@@ -1,7 +1,21 @@
 {
     "field_name": "productsFacets",
     "function_name": "getProductsFacets",
-    "input_type_format": "",
+    "input_type": {
+        "properties": {
+            "query": {
+                "bsonType": "object",
+                "properties": {
+                    "searchName": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "title": "productsFacetsInput",
+        "type": "object"
+    },
+    "input_type_format": "custom",
     "on_type": "Product",
     "payload_type": {
         "bsonType": "array",
@@ -102,7 +116,7 @@
                 }
             }
         },
-        "title": "productsFacets"
+        "title": "productsFacetsPayload"
     },
     "payload_type_format": "custom"
 }
