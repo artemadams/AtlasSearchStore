@@ -1,0 +1,19 @@
+{
+    "id": "626931e13e0b17265daa79e9",
+    "name": "onCreateUser",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "createUser"
+            }
+        }
+    }
+}

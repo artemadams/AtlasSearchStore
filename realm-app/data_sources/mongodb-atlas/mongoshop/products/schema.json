@@ -1,0 +1,662 @@
+{
+    "properties": {
+        "3dmodel_id": {
+            "bsonType": "string"
+        },
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "brand": {
+            "bsonType": "string"
+        },
+        "bullet_point": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "category": {
+            "bsonType": "string"
+        },
+        "color": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "standardized_values": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "color_code": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "colors": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            }
+        },
+        "country": {
+            "bsonType": "string"
+        },
+        "descriptions": {
+            "bsonType": "object",
+            "properties": {
+                "ar_AE": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "cs_CZ": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "de_DE": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_AE": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_AU": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_CA": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_GB": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_IN": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_SG": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "en_US": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "es_ES": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "es_MX": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "es_US": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "fr_CA": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "fr_FR": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "he_IL": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "it_IT": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "ja_JP": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "ko_KR": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "nl_NL": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "pl_PL": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "pt_BR": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "pt_PT": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "sv_SE": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "tr_TR": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "zh_CN": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "zh_TW": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "domain_name": {
+            "bsonType": "string"
+        },
+        "fabric_type": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "finish_type": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "item_dimensions": {
+            "bsonType": "object",
+            "properties": {
+                "height": {
+                    "bsonType": "object",
+                    "properties": {
+                        "normalized_value": {
+                            "bsonType": "object",
+                            "properties": {
+                                "unit": {
+                                    "bsonType": "string"
+                                },
+                                "value": {
+                                    "bsonType": "double"
+                                }
+                            }
+                        },
+                        "unit": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "double"
+                        }
+                    }
+                },
+                "length": {
+                    "bsonType": "object",
+                    "properties": {
+                        "normalized_value": {
+                            "bsonType": "object",
+                            "properties": {
+                                "unit": {
+                                    "bsonType": "string"
+                                },
+                                "value": {
+                                    "bsonType": "double"
+                                }
+                            }
+                        },
+                        "unit": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "double"
+                        }
+                    }
+                },
+                "width": {
+                    "bsonType": "object",
+                    "properties": {
+                        "normalized_value": {
+                            "bsonType": "object",
+                            "properties": {
+                                "unit": {
+                                    "bsonType": "string"
+                                },
+                                "value": {
+                                    "bsonType": "double"
+                                }
+                            }
+                        },
+                        "unit": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "double"
+                        }
+                    }
+                }
+            }
+        },
+        "item_id": {
+            "bsonType": "string"
+        },
+        "item_keywords": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "item_name": {
+            "bsonType": "object",
+            "properties": {
+                "ar_AE": {
+                    "bsonType": "string"
+                },
+                "cs_CZ": {
+                    "bsonType": "string"
+                },
+                "de_DE": {
+                    "bsonType": "string"
+                },
+                "en_AE": {
+                    "bsonType": "string"
+                },
+                "en_AU": {
+                    "bsonType": "string"
+                },
+                "en_CA": {
+                    "bsonType": "string"
+                },
+                "en_GB": {
+                    "bsonType": "string"
+                },
+                "en_IN": {
+                    "bsonType": "string"
+                },
+                "en_SG": {
+                    "bsonType": "string"
+                },
+                "en_US": {
+                    "bsonType": "string"
+                },
+                "es_ES": {
+                    "bsonType": "string"
+                },
+                "es_MX": {
+                    "bsonType": "string"
+                },
+                "es_US": {
+                    "bsonType": "string"
+                },
+                "fr_CA": {
+                    "bsonType": "string"
+                },
+                "fr_FR": {
+                    "bsonType": "string"
+                },
+                "he_IL": {
+                    "bsonType": "string"
+                },
+                "hi_IN": {
+                    "bsonType": "string"
+                },
+                "it_IT": {
+                    "bsonType": "string"
+                },
+                "ja_JP": {
+                    "bsonType": "string"
+                },
+                "kn_IN": {
+                    "bsonType": "string"
+                },
+                "ko_KR": {
+                    "bsonType": "string"
+                },
+                "ml_IN": {
+                    "bsonType": "string"
+                },
+                "nl_NL": {
+                    "bsonType": "string"
+                },
+                "pl_PL": {
+                    "bsonType": "string"
+                },
+                "pt_BR": {
+                    "bsonType": "string"
+                },
+                "pt_PT": {
+                    "bsonType": "string"
+                },
+                "sv_SE": {
+                    "bsonType": "string"
+                },
+                "ta_IN": {
+                    "bsonType": "string"
+                },
+                "te_IN": {
+                    "bsonType": "string"
+                },
+                "tr_TR": {
+                    "bsonType": "string"
+                },
+                "zh_CN": {
+                    "bsonType": "string"
+                },
+                "zh_TW": {
+                    "bsonType": "string"
+                }
+            }
+        },
+        "item_shape": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "item_weight": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "normalized_value": {
+                        "bsonType": "object",
+                        "properties": {
+                            "unit": {
+                                "bsonType": "string"
+                            },
+                            "value": {
+                                "bsonType": "double"
+                            }
+                        }
+                    },
+                    "unit": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "double"
+                    }
+                }
+            }
+        },
+        "language_tag": {
+            "bsonType": "string"
+        },
+        "main_description": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "main_image_id": {
+            "bsonType": "string"
+        },
+        "main_image_url": {
+            "bsonType": "string"
+        },
+        "marketplace": {
+            "bsonType": "string"
+        },
+        "material": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "model_name": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "model_number": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "model_year": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "value": {
+                        "bsonType": "int"
+                    }
+                }
+            }
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "node": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "node_id": {
+                        "bsonType": "int"
+                    },
+                    "node_name": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "other_image_id": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "pattern": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "price": {
+            "bsonType": "object",
+            "properties": {
+                "currency": {
+                    "bsonType": "string"
+                },
+                "value": {
+                    "bsonType": "double"
+                }
+            }
+        },
+        "product_description": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "product_type": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "spin_id": {
+            "bsonType": "string"
+        },
+        "style": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "language_tag": {
+                        "bsonType": "string"
+                    },
+                    "value": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "styles": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            }
+        }
+    },
+    "title": "product"
+}

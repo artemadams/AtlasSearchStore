@@ -1,0 +1,7 @@
+{
+    "app_id": "mongostoreapp-dnerj",
+    "config_version": 20210101,
+    "name": "MongoStoreApp",
+    "location": "US-VA",
+    "deployment_model": "GLOBAL"
+}

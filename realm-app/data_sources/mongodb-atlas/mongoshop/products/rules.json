@@ -1,0 +1,26 @@
+{
+    "collection": "products",
+    "database": "mongoshop",
+    "roles": [
+        {
+            "name": "editor",
+            "apply_when": {
+                "%%user.custom_data.isEditor": true
+            },
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "default",
+            "apply_when": {},
+            "read": true,
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ]
+}
