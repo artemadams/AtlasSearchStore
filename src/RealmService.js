@@ -34,7 +34,17 @@ export const realmFunctionTemplate = async () => {
         const user = await app.logIn(credentials);
         // all functions hosted on realm for an app are exposed in the `user.functions` property
         // replace `nameOfRealmFunction` with the name of the function you want to call
-        const result = await user.functions.addProduct();
+        const result = await user.functions.nameOfRealmFunction();
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+export const addProduct = async () => {
+    try {
+        const result = await app.currentUser.functions.addProduct();
+        console.log(result);
+        return result;
     } catch (error) {
         console.error(error);
     }
@@ -64,12 +74,13 @@ export const registerUser = async (email, password) => {
         // Register the user
         const user = await app.emailPasswordAuth.registerUser({ email, password });
         console.log(user);
-        return user;
+        return await loginEmailPassword(email, password);
     } catch (err) {
-        loginEmailPassword(email, password);
+        return await loginEmailPassword(email, password);
         // console.error("Failed to register", err);
     }
 };
 
-// const user = await loginEmailPassword("joe.jasper@example.com", "passw0rd");
-// console.log("Successfully logged in!", user);
+export const getUser = async () => {
+    return app.currentUser;
+};
