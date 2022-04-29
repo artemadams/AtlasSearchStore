@@ -1,7 +1,8 @@
 exports = function(authEvent) {
   const id = authEvent.user.id
+  const isMongoDBUser = authEvent.user.profile.data.email.split("@")[1] === "mongodb.com" ? true : false
   const collection = context.services.get("mongodb-atlas").db("mongoshop").collection("users");
-  const doc = collection.insertOne({ userId: id, isEditor: true });
+  const doc = collection.insertOne({ userId: id, isMongoDBUser: isMongoDBUser });
   /*
     An Authentication Trigger will always call a function with an authEvent.
     Documentation on Triggers: https://docs.mongodb.com/realm/triggers/overview/
