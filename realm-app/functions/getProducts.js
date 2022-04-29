@@ -62,6 +62,7 @@ exports = async function(payload, response) {
         category: 1,
         marketplace:1,
         main_description:1,
+        internalPrice: { $multiply: ["$price", 0.5]  },
         score: {
         '$meta': 'searchScore'
         },
