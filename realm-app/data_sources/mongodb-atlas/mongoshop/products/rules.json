@@ -5,7 +5,7 @@
         {
             "name": "editor",
             "apply_when": {
-                "%%user.custom_data.isEditor": true
+                "%%user.custom_data.isMongoDBUser": true
             },
             "write": true,
             "insert": true,
