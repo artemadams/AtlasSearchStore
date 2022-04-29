@@ -1,5 +1,20 @@
 [
     {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "updateProductCatalog",
+        "private": false
+    },
+    {
+        "name": "addProduct",
+        "private": false,
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
+    },
+    {
         "name": "getProducts",
         "private": false,
         "run_as_system": true
@@ -18,16 +33,13 @@
         "run_as_system": true
     },
     {
-        "name": "autocompleteNamesDev",
-        "private": false
-    },
-    {
         "name": "updateProduct",
         "private": false
     },
     {
-        "name": "updateProductCatalog",
-        "private": false
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "getProduct",
@@ -39,15 +51,7 @@
         "run_as_system": true
     },
     {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
+        "name": "getProductsFacets",
+        "private": false
     }
 ]
