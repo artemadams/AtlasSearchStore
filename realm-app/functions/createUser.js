@@ -1,7 +1,7 @@
 exports = function(authEvent) {
   const id = authEvent.user.id
-  console.log(authEvent.user.profile.data.email)
-  const isMongoDB = authEvent.user.profile.data.email.split("@")[1] === "mongodb.com" ? true : false
+  console.log(authEvent.user.data.email)
+  const isMongoDB = authEvent.user.data.email.split("@")[1] === "mongodb.com" ? true : false
   const collection = context.services.get("mongodb-atlas").db("mongoshop").collection("users");
   const doc = collection.insertOne({ userId: id, isMongoDBUser: isMongoDB });
   /*
