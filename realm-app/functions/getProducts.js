@@ -126,7 +126,7 @@ exports = async function(payload, response) {
     if (searchTerm==='') {
       products = await allProducts.find({}).toArray();
     } else  {
-      eventsLog.insertOne({"action": "search", "term": searchTerm, "date": new Date() });
+      eventsLog.insertOne({"action": "search", "params": calledAggregation[0].$search.compound, "date": new Date() });
       products = await allProducts.aggregate(calledAggregation).toArray();
     }
      
