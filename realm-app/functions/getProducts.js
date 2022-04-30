@@ -122,10 +122,11 @@ exports = async function(payload, response) {
 
   //  const allProducts = context.services.get("mongodb-atlas").db("ecommerce").collection("products");
   const allProducts = context.services.get("mongodb-atlas").db("mongoshop").collection("products");
-     
+  const eventsLog = context.services.get("mongodb-atlas").db("mongoshop").collection("eventsLog");
     if (searchTerm==='') {
       products = await allProducts.find({}).toArray();
     } else  {
+      eventsLog.insertOne({"action": "search", "term": searchTerm, "date": new Date() });
       products = await allProducts.aggregate(calledAggregation).toArray();
     }
      
