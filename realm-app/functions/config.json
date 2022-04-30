@@ -5,6 +5,15 @@
         "run_as_system": true
     },
     {
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "syns",
+        "private": false,
+        "run_as_system": true
+    },
+    {
         "name": "updateProduct",
         "private": false
     },
@@ -16,13 +25,13 @@
         }
     },
     {
+        "name": "getProduct",
+        "private": false
+    },
+    {
         "name": "getCategories",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "getProduct",
-        "private": false
     },
     {
         "name": "getProductsDev",
@@ -30,8 +39,8 @@
         "run_as_system": true
     },
     {
-        "name": "resetFunc",
-        "private": true
+        "name": "autocompleteNamesDev",
+        "private": false
     },
     {
         "name": "getProducts",
@@ -48,16 +57,7 @@
         "run_as_system": true
     },
     {
-        "name": "autocompleteNamesDev",
-        "private": false
-    },
-    {
         "name": "createUser",
         "private": true
-    },
-    {
-        "name": "syns",
-        "private": false,
-        "run_as_system": true
     }
 ]
