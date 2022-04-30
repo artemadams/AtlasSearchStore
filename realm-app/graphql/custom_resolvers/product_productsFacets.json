@@ -3,13 +3,8 @@
     "function_name": "getProductsFacets",
     "input_type": {
         "properties": {
-            "query": {
-                "bsonType": "object",
-                "properties": {
-                    "searchName": {
-                        "bsonType": "string"
-                    }
-                }
+            "searchName": {
+                "bsonType": "string"
             }
         },
         "title": "productsFacetsInput",

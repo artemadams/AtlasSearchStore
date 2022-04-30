@@ -1,10 +1,10 @@
 // This function is the endpoint's request handler.
-exports = async function({ query, headers, body}, response) {
+exports = async function(facetInput) {
   const products = context.services.get("mongodb-atlas").db("mongoshop").collection("products");
   
-  console.log("query: ", query);
+  // console.log("query: ", query);
   
-  let searchName = query.searchName;
+  let searchName = facetInput.searchName;
   console.log("searchName is: ", searchName);
   if (!searchName) return[];
   
