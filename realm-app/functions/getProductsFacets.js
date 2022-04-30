@@ -46,6 +46,21 @@ exports = async function(facetInput) {
 ];
   
   const facets = await products.aggregate(searchFacets).toArray();
+  
+  /*
+    Lets parse the payload here to make it easier for GraphQL
+    instead of array with separate objects etc.
+    {
+      count:x,
+      categoryFacet:[{}, {}, {}],
+      marketplaceFacet:[{}, {}],
+      countryFacet:[{}],
+      priceFacet:[{}, {}, {}, {}] --> defined set of buckets
+    }
+    return this data type and modify gql payload. 
+    
+  */
+  
   return facets;
     
 };
