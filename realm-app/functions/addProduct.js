@@ -1,6 +1,6 @@
 exports = function (arg) {
     const mongodb = context.services.get("mongodb-atlas");
-    const productsCollection = mongodb.db("mongoshop").collection("products");
+    const productsCollection = mongodb.db("mongoshop").collection("myprods");
 
     const newItem = {
         item_dimensions: {
@@ -18,12 +18,6 @@ exports = function (arg) {
         main_image_id: "81bMJUjFF5L",
         other_image_id: [
             "71xhqZGk61L",
-            "61AU0EqzBWL",
-            "81ZLReG+6qL",
-            "81sDcrLkX9L",
-            "91clKsmHlpL",
-            "81I6gmiBHTL",
-            "919wB8WuO4L",
             "813+pxCA-3L",
         ],
         country: "IN",
@@ -35,22 +29,18 @@ exports = function (arg) {
         price: { currency: "USD", value: 67.03 },
         colors: [["black"]],
         styles: [["LightCyan"]],
-        descriptions: null,
-        main_description: null,
+        descriptions: [],
+        main_description: "test descriptions",
         name: "New item --- testing",
         brand: "AmazonBasics",
         language_tag: "en_IN",
     };
 
-    const test = {
-        marketplace: "Amazon",
-        descriptions: [],
-    };
-
+    var response = { doc: newItem }
     productsCollection
-        .insertOne(test)
-        .then((result) => console.log(`Successfully inserted item with _id: ${result.insertedId}`))
+        .insertOne(newItem)
+        .then((result) => {response = result; console.log(`Successfully inserted item with _id: ${result.insertedId}`)})
         .catch((err) => console.error(`Failed to insert item: ${err}`));
 
-    return { doc: newItem };
+    return response;
 };
