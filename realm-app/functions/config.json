@@ -1,28 +1,7 @@
 [
     {
-        "name": "updateProduct",
-        "private": false
-    },
-    {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "autocompleteNamesDev",
-        "private": false
-    },
-    {
-        "name": "getProducts",
-        "private": false,
-        "run_as_system": true
+        "name": "createUser",
+        "private": true
     },
     {
         "name": "resetFunc",
@@ -31,6 +10,34 @@
     {
         "name": "updateProductCatalog",
         "private": false
+    },
+    {
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "getCategories",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProduct",
+        "private": false
+    },
+    {
+        "name": "getProductsDev",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "getProductsFacets",
@@ -43,21 +50,14 @@
         "run_as_system": true
     },
     {
-        "name": "createUser",
-        "private": true
-    },
-    {
-        "name": "getCategories",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProduct",
+        "name": "updateProduct",
         "private": false
     },
     {
-        "name": "getProductsDev",
+        "name": "addProduct",
         "private": false,
-        "run_as_system": true
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
     }
 ]
