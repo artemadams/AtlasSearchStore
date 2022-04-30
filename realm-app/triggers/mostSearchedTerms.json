@@ -3,7 +3,7 @@
     "name": "mostSearchedTerms",
     "type": "SCHEDULED",
     "config": {
-        "schedule": "*/10 * * * *",
+        "schedule": "*/1 * * * *",
         "skip_catchup_events": false
     },
     "disabled": false,
