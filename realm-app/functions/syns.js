@@ -46,7 +46,7 @@ exports = async function(payload, response) {
   let calledAggregation = [
     { 
       $search: {
-        index:"default_syns",
+        index:"default_prod",
         compound:{
           should:[],
           filter:[]
@@ -77,8 +77,8 @@ exports = async function(payload, response) {
           text:{
             query:searchTerm,
             path: ['name', 'main_description'],
-            fuzzy:{maxEdits:1},
-            synonyms: 'productSynonyms'
+            fuzzy:{maxEdits:1}
+            //synonyms: 'productSynonyms'
           }
         };
       calledAggregation[0].$search.compound.should.push(textObject);
