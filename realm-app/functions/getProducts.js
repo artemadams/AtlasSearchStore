@@ -131,9 +131,6 @@ exports = async function(payload, response) {
     }
      
      
-     
- 
-     
     //  const content_docs = await collection.aggregate(calledAggregation).toArray();
   let displayedProducts = products.slice(((page-1)*nPerPage), nPerPage*page);
 
