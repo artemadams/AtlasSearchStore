@@ -1,6 +1,19 @@
 [
     {
-        "name": "syns",
+        "name": "mostSearchedTerms",
+        "private": true
+    },
+    {
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getCategories",
         "private": false,
         "run_as_system": true
     },
@@ -9,16 +22,15 @@
         "private": true
     },
     {
-        "name": "mostSearchTerms",
-        "private": true
+        "name": "getProduct",
+        "private": false
     },
     {
-        "name": "getCategories",
-        "private": false,
-        "run_as_system": true
+        "name": "autocompleteNamesDev",
+        "private": false
     },
     {
-        "name": "getProductsDev",
+        "name": "syns",
         "private": false,
         "run_as_system": true
     },
@@ -27,28 +39,7 @@
         "private": false
     },
     {
-        "name": "updateProductCatalog",
-        "private": false
-    },
-    {
         "name": "getProducts",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "autocompleteNamesDev",
-        "private": false
-    },
-    {
-        "name": "getProduct",
-        "private": false
-    },
-    {
-        "name": "resetFunc",
-        "private": true
-    },
-    {
-        "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     },
@@ -60,8 +51,17 @@
         }
     },
     {
-        "name": "autocompleteNames",
+        "name": "getProductsDev",
         "private": false,
         "run_as_system": true
+    },
+    {
+        "name": "getProductsFacets",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "updateProductCatalog",
+        "private": false
     }
 ]
