@@ -22,7 +22,7 @@ exports = function() {
 
   const sortStage = {$sort: { count: -1 }};
 
-  const limitStage = {$limit: 10};
+  const limitStage = {$limit: 20};
 
   const mergeStage = {$merge: {
                        into: 'mostSearchedTerms',
