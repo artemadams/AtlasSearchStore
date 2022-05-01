@@ -46,7 +46,7 @@ exports = async function(payload, response) {
   let calledAggregation = [
     { 
       $search: {
-        index:"default_prod",
+        index:"default_syns",
         compound:{
           should:[],
           filter:[]
