@@ -76,7 +76,7 @@ exports = async function(payload, response) {
       const textObject = {
           text:{
             query:searchTerm,
-            path: ['name','main_description','node_name','model','item_id'],
+            path: ['name','main_description'],
             fuzzy:{maxEdits:1}
           }
         };
