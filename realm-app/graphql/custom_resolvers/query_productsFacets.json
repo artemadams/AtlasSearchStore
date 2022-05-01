@@ -1,16 +1,7 @@
 {
     "field_name": "productsFacets",
     "function_name": "getProductsFacets",
-    "input_type": {
-        "properties": {
-            "searchName": {
-                "bsonType": "string"
-            }
-        },
-        "title": "productsFacetsInput",
-        "type": "object"
-    },
-    "input_type_format": "custom",
+    "input_type_format": "",
     "on_type": "Query",
     "payload_type": {
         "bsonType": "object",
