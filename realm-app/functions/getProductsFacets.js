@@ -45,22 +45,18 @@ exports = async function(facetInput) {
   }
 ];
   
-  const facets = await products.aggregate(searchFacets).toArray();
+  let facets = await products.aggregate(searchFacets).toArray();
   
   /*
-    Lets parse the payload here to make it easier for GraphQL
-    instead of array with separate objects etc.
-    {
-      count:x,
-      categoryFacet:[{}, {}, {}],
-      marketplaceFacet:[{}, {}],
-      countryFacet:[{}],
-      priceFacet:[{}, {}, {}, {}] --> defined set of buckets
-    }
-    return this data type and modify gql payload. 
-    
+    Ugly but I'm transforming payload from the aggregation to make it easy to define the payload in GQL.
   */
   
-  return facets;
-    
+  facets = JSON.parse(JSON.stringify(facets))[0];
+  return {
+    count: Number(facets["count"]["lowerBound"]), //type number
+    categoryFacet:facets["facet"]["categoryFacet"]["buckets"], //type array
+    countryFacet:facets["facet"]["countryFacet"]["buckets"], //type array
+    marketplaceFacet:facets["facet"]["marketplaceFacet"]["buckets"], //type array
+    priceFacet:facets["facet"]["priceFacet"]["buckets"]
+  }
 };
