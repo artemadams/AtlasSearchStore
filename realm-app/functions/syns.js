@@ -50,8 +50,8 @@ exports = async function(payload, response) {
         compound:{
           should:[],
           filter:[]
-        }
-         //highlight:{path:'main_description'}
+        },
+         highlight:{path:'main_description'}
       }
     },
     { $project: {
@@ -65,8 +65,8 @@ exports = async function(payload, response) {
         internalPrice: { $multiply: ["$price.value", 0.5]  },
         score: {
         '$meta': 'searchScore'
-        }
-         //highlights:{$meta:'searchHighlights'}
+        },
+         highlights:{$meta:'searchHighlights'}
       }
     },
     { $limit:48
