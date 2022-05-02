@@ -77,7 +77,7 @@ exports = async function(payload, response) {
           text:{
             query:searchTerm,
             path: ['name','main_description'],
-            fuzzy:{maxEdits:1},
+          //  fuzzy:{maxEdits:1},
             synonyms: 'productSynonyms'
           }
         };
