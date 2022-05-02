@@ -1,5 +1,5 @@
 {
-    "field_name": "productsFacets",
+    "field_name": "productsFacetsGQL",
     "function_name": "getProductsFacets",
     "input_type_format": "",
     "on_type": "Query",
