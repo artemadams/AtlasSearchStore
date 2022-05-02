@@ -1,53 +1,22 @@
 [
     {
-        "name": "syns",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProductsGQL",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "updateProduct",
-        "private": false
-    },
-    {
-        "name": "resetFunc",
-        "private": true
-    },
-    {
         "name": "getCategories",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "mostSearchedTerms",
-        "private": true
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
     },
     {
-        "name": "updateProductCatalog",
+        "name": "syns",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "applyPromotionToProduct",
         "private": false
-    },
-    {
-        "name": "createUser",
-        "private": true
-    },
-    {
-        "name": "getProductsDev",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProductsFacets",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProductsOrigBackup",
-        "private": false,
-        "run_as_system": true
     },
     {
         "name": "addProduct",
@@ -55,11 +24,6 @@
         "can_evaluate": {
             "%%user.custom_data.isEditor": true
         }
-    },
-    {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
     },
     {
         "name": "autocompleteNamesDev",
@@ -70,12 +34,48 @@
         "private": false
     },
     {
-        "name": "getProducts",
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "createUser",
+        "private": true
+    },
+    {
+        "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "applyPromotionToProduct",
+        "name": "updateProductCatalog",
+        "private": false
+    },
+    {
+        "name": "getProductsDev",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductsGQL",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductsOrigBackup",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "mostSearchedTerms",
+        "private": true
+    },
+    {
+        "name": "updateProduct",
         "private": false
     }
 ]
