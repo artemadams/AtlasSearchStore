@@ -4,7 +4,10 @@
     "input_type": {
         "properties": {
             "categories": {
-                "bsonType": "string"
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
             },
             "market": {
                 "bsonType": "string"
