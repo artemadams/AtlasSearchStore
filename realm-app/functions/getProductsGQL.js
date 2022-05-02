@@ -74,7 +74,7 @@ exports = async function({searchTerm, categories=[], market="", showSponsored=fa
         fuzzy:{maxEdits:1}
       }
     };
-    calledAggregation[0].$search.compound.should.push(textObject);
+    calledAggregation[0].$search.compound.should.push(textObjects);
   }
     
 
