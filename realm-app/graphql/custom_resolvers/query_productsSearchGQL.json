@@ -19,7 +19,7 @@
                 "bsonType": "boolean"
             }
         },
-        "title": "productsFacetsInput",
+        "title": "productsSearchInput",
         "type": "object"
     },
     "input_type_format": "custom",
@@ -113,7 +113,7 @@
                 }
             }
         },
-        "title": "productsSearchInput",
+        "title": "productsSearchPayload",
         "type": "object"
     },
     "payload_type_format": "custom"
