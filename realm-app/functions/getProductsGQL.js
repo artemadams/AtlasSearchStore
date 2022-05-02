@@ -1,5 +1,5 @@
 // This function is the endpoint's request handler.
-exports = async function({searchTerm, categories, market, showSponsored, page}) {
+exports = async function({searchTerm, categories="", market="", showSponsored=false, page=1}) {
   
   if (searchTerm == "" && categories.length === 0 && market !==""){
     return({

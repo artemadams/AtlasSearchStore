@@ -1,34 +1,5 @@
 [
     {
-        "name": "updateProductCatalog",
-        "private": false
-    },
-    {
-        "name": "getCategories",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "resetFunc",
-        "private": true
-    },
-    {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
-        "name": "createUser",
-        "private": true
-    },
-    {
         "name": "syns",
         "private": false,
         "run_as_system": true
@@ -39,21 +10,29 @@
         "run_as_system": true
     },
     {
-        "name": "mostSearchedTerms",
-        "private": true
-    },
-    {
-        "name": "getProduct",
+        "name": "updateProduct",
         "private": false
     },
     {
-        "name": "getProducts",
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "getCategories",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "applyPromotionToProduct",
+        "name": "mostSearchedTerms",
+        "private": true
+    },
+    {
+        "name": "updateProductCatalog",
         "private": false
+    },
+    {
+        "name": "createUser",
+        "private": true
     },
     {
         "name": "getProductsDev",
@@ -66,16 +45,37 @@
         "run_as_system": true
     },
     {
-        "name": "autocompleteNamesDev",
-        "private": false
-    },
-    {
         "name": "getProductsOrigBackup",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "updateProduct",
+        "name": "addProduct",
+        "private": false,
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
+    },
+    {
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "getProduct",
+        "private": false
+    },
+    {
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "applyPromotionToProduct",
         "private": false
     }
 ]
