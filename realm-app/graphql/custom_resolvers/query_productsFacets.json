@@ -4,5 +4,5 @@
     "input_type_format": "",
     "on_type": "Query",
     "payload_type": "ProductsFacetsPayload",
-    "payload_type_format": "generated-list"
+    "payload_type_format": "generated"
 }
