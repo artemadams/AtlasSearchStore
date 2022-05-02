@@ -1,30 +1,14 @@
 [
     {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "createUser",
-        "private": true
-    },
-    {
-        "name": "getCategories",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProducts",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "mostSearchedTerms",
-        "private": true
-    },
-    {
-        "name": "autocompleteNamesDev",
+        "name": "applyPromotionToProduct",
         "private": false
+    },
+    {
+        "name": "addProduct",
+        "private": false,
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
     },
     {
         "name": "syns",
@@ -32,8 +16,39 @@
         "run_as_system": true
     },
     {
-        "name": "applyPromotionToProduct",
+        "name": "getProduct",
         "private": false
+    },
+    {
+        "name": "updateProductCatalog",
+        "private": false
+    },
+    {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductsFacets",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "updateProduct",
+        "private": false
+    },
+    {
+        "name": "createUser",
+        "private": true
     },
     {
         "name": "getProductsDev",
@@ -45,27 +60,12 @@
         "private": true
     },
     {
-        "name": "getProduct",
-        "private": false
-    },
-    {
-        "name": "updateProductCatalog",
-        "private": false
-    },
-    {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
-        "name": "getProductsFacets",
+        "name": "getCategories",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "updateProduct",
-        "private": false
+        "name": "mostSearchedTerms",
+        "private": true
     }
 ]
