@@ -1,0 +1,120 @@
+{
+    "field_name": "productsSearchGQL",
+    "function_name": "getProductsGQL",
+    "input_type": {
+        "properties": {
+            "categories": {
+                "bsonType": "string"
+            },
+            "market": {
+                "bsonType": "string"
+            },
+            "page": {
+                "bsonType": "number"
+            },
+            "searchTerm": {
+                "bsonType": "string"
+            },
+            "showSponsored": {
+                "bsonType": "boolean"
+            }
+        },
+        "title": "productsFacetsInput",
+        "type": "object"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": {
+        "properties": {
+            "displayedProducts": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "category": {
+                            "bsonType": "string"
+                        },
+                        "internalPrice": {
+                            "bsonType": "number"
+                        },
+                        "main_image_url": {
+                            "bsonType": "string"
+                        },
+                        "marketplace": {
+                            "bsonType": "string"
+                        },
+                        "name": {
+                            "bsonType": "string"
+                        },
+                        "price": {
+                            "bsonType": "object",
+                            "properties": {
+                                "currency": {
+                                    "bsonType": "string"
+                                },
+                                "value": {
+                                    "bsonType": "number"
+                                }
+                            }
+                        },
+                        "score": {
+                            "bsonType": "number"
+                        },
+                        "sponsored": {
+                            "bsonType": "number"
+                        }
+                    }
+                }
+            },
+            "maxPages": {
+                "bsonType": "number"
+            },
+            "ok": {
+                "bsonType": "boolean"
+            },
+            "products": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "category": {
+                            "bsonType": "string"
+                        },
+                        "internalPrice": {
+                            "bsonType": "number"
+                        },
+                        "main_image_url": {
+                            "bsonType": "string"
+                        },
+                        "marketplace": {
+                            "bsonType": "string"
+                        },
+                        "name": {
+                            "bsonType": "string"
+                        },
+                        "price": {
+                            "bsonType": "object",
+                            "properties": {
+                                "currency": {
+                                    "bsonType": "string"
+                                },
+                                "value": {
+                                    "bsonType": "number"
+                                }
+                            }
+                        },
+                        "score": {
+                            "bsonType": "number"
+                        },
+                        "sponsored": {
+                            "bsonType": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "title": "productsSearchInput",
+        "type": "object"
+    },
+    "payload_type_format": "custom"
+}
