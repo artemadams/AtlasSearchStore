@@ -1,45 +1,6 @@
 exports = function() {
   const eventsLog = context.services.get("mongodb-atlas").db("mongoshop").collection("eventsLog");
 
-[
-  , {
-    '$group': {
-      '_id': {
-        'action': '$action', 
-        'query': '$params.filter.text.query'
-      }, 
-      'count': {
-        '$sum': 1
-      }
-    }
-  }, {
-    '$unwind': {
-      'path': '$_id.query', 
-      'preserveNullAndEmptyArrays': false
-    }
-  }, {
-    '$sort': {
-      'count': -1
-    }
-  }, {
-    '$unwind': {
-      'path': '$_id.query', 
-      'includeArrayIndex': 'index', 
-      'preserveNullAndEmptyArrays': false
-    }
-  }, {
-    '$match': {
-      'index': 0
-    }
-  }, {
-    '$merge': {
-      'into': 'mostSearchedCategories', 
-      'on': '_id', 
-      'whenMatched': 'merge', 
-      'whenNotMatched': 'insert'
-    }
-  }
-]
 
   const matchStage = {$match: {
                        'params.filter.text.path': 'category'
