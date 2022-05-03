@@ -1,0 +1,17 @@
+{
+    "id": "6271164e71b50fe79f82887d",
+    "name": "mostSearchedCategories",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "*/5 * * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "mostSearchedCategories"
+            }
+        }
+    }
+}
