@@ -1,7 +1,28 @@
 [
     {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "getCategories",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "createUser",
+        "private": true
+    },
+    {
+        "name": "updateProductCatalog",
+        "private": false
+    },
+    {
         "name": "mostSearchedCategories",
         "private": true
+    },
+    {
+        "name": "applyPromotionToProduct",
+        "private": false
     },
     {
         "name": "syns",
@@ -9,7 +30,11 @@
         "run_as_system": true
     },
     {
-        "name": "autocompleteNames",
+        "name": "mostSearchedTerms",
+        "private": true
+    },
+    {
+        "name": "getProductsOrigBackup",
         "private": false,
         "run_as_system": true
     },
@@ -24,39 +49,14 @@
         "run_as_system": true
     },
     {
-        "name": "getProductsFacets",
+        "name": "autocompleteNames",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "mostSearchedTerms",
-        "private": true
-    },
-    {
-        "name": "resetFunc",
-        "private": true
-    },
-    {
-        "name": "autocompleteNamesDev",
-        "private": false
     },
     {
         "name": "getProductsDev",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "getProductsOrigBackup",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "updateProductCatalog",
-        "private": false
-    },
-    {
-        "name": "applyPromotionToProduct",
-        "private": false
     },
     {
         "name": "addProduct",
@@ -66,12 +66,16 @@
         }
     },
     {
-        "name": "getCategories",
+        "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "createUser",
+        "name": "resetFunc",
         "private": true
+    },
+    {
+        "name": "getProductById",
+        "private": false
     }
 ]
