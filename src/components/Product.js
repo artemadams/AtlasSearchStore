@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductDescription from "./ProductDescription";
 
 import { ShoppingCartIcon } from "@heroicons/react/outline";
+import { getUser } from "../RealmService";
 
 const Product = ({ product }) => {
     const [showDescription, setShowDescription] = useState(false);
@@ -16,6 +17,11 @@ const Product = ({ product }) => {
     }
 
     let price = Object.values(product.price.value)[0];
+
+    useEffect(async () => {
+        let user = await getUser();
+        user.functions.insertClickEvent(product);
+    });
 
     let ProdDescriptionComponent = (
         <div className="fixed inset-0 z-20 flex justify-center bg-smoke-dark">
@@ -59,7 +65,9 @@ const Product = ({ product }) => {
     return (
         <div href={`/products/${product._id}`}>
             <div
-                onClick={() => setShowDescription(true)}
+                onClick={() => {
+                    setShowDescription(true);
+                }}
                 className="w-full max-w-sm mx-auto rounded-md shadow-md cursor-pointer hover:shadow-2xl transition relative"
             >
                 <div className="flex items-end justify-end h-56 w-full bg-cover ">
