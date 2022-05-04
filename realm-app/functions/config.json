@@ -1,20 +1,25 @@
 [
     {
-        "name": "getProductsGQL",
+        "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "mostSearchedTerms",
-        "private": true
+        "name": "syns",
+        "private": false,
+        "run_as_system": true
     },
     {
-        "name": "autocompleteNamesDev",
+        "name": "updateProductCatalog",
         "private": false
     },
     {
         "name": "createUser",
         "private": true
+    },
+    {
+        "name": "applyPromotionToProduct",
+        "private": false
     },
     {
         "name": "addProduct",
@@ -24,28 +29,20 @@
         }
     },
     {
-        "name": "applyPromotionToProduct",
-        "private": false
-    },
-    {
-        "name": "getProductsFacets",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "mostSearchedCategories",
-        "private": true
-    },
-    {
         "name": "insertClickedEvent",
         "private": false
     },
     {
-        "name": "updateProductCatalog",
-        "private": false
+        "name": "mostSearchedTerms",
+        "private": true
     },
     {
         "name": "autocompleteNames",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getCategories",
         "private": false,
         "run_as_system": true
     },
@@ -55,8 +52,12 @@
         "run_as_system": true
     },
     {
-        "name": "getProductById",
-        "private": false
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "mostSearchedCategories",
+        "private": true
     },
     {
         "name": "getProductsDev",
@@ -64,13 +65,12 @@
         "run_as_system": true
     },
     {
-        "name": "resetFunc",
-        "private": true
+        "name": "autocompleteNamesDev",
+        "private": false
     },
     {
-        "name": "syns",
-        "private": false,
-        "run_as_system": true
+        "name": "getProductById",
+        "private": false
     },
     {
         "name": "getProducts",
@@ -78,7 +78,7 @@
         "run_as_system": true
     },
     {
-        "name": "getCategories",
+        "name": "getProductsGQL",
         "private": false,
         "run_as_system": true
     }
