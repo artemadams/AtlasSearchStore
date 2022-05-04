@@ -1,16 +1,24 @@
 [
     {
-        "name": "autocompleteNamesDev",
-        "private": false
+        "name": "addProduct",
+        "private": false,
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
     },
     {
-        "name": "getCategories",
+        "name": "getProductsDev",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "createUser",
-        "private": true
+        "name": "applyPromotionToProduct",
+        "private": false
+    },
+    {
+        "name": "getProductsGQL",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "updateProductCatalog",
@@ -21,20 +29,17 @@
         "private": true
     },
     {
-        "name": "applyPromotionToProduct",
-        "private": false
-    },
-    {
-        "name": "syns",
+        "name": "getProductsOrigBackup",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "mostSearchedTerms",
-        "private": true
+        "name": "getCategories",
+        "private": false,
+        "run_as_system": true
     },
     {
-        "name": "getProductsOrigBackup",
+        "name": "syns",
         "private": false,
         "run_as_system": true
     },
@@ -44,9 +49,16 @@
         "run_as_system": true
     },
     {
-        "name": "getProductsGQL",
-        "private": false,
-        "run_as_system": true
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "autocompleteNamesDev",
+        "private": false
+    },
+    {
+        "name": "createUser",
+        "private": true
     },
     {
         "name": "autocompleteNames",
@@ -54,28 +66,20 @@
         "run_as_system": true
     },
     {
-        "name": "getProductsDev",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
         "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "resetFunc",
+        "name": "getProductById",
+        "private": false
+    },
+    {
+        "name": "mostSearchedTerms",
         "private": true
     },
     {
-        "name": "getProductById",
+        "name": "insertClickedEvent",
         "private": false
     }
 ]
