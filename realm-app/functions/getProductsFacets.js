@@ -2,8 +2,8 @@
 exports = async function({searchTerm}) {
   const products = context.services.get("mongodb-atlas").db("mongoshop").collection("products");
   
-  console.log("searchName is: ", searchName);
-  if (!searchName) return[];
+  console.log("searchName is: ", searchTerm);
+  if (!searchTerm) return[];
   
   const searchFacets = [
   {
@@ -12,7 +12,7 @@ exports = async function({searchTerm}) {
       'facet': {
         'operator': {
           'text': {
-            'query': searchName, 
+            'query': searchTerm, 
             'path': 'name'
           }
         }, 
