@@ -41,7 +41,8 @@ const ProductDescription = ({
         console.log(product);
         const res = await user.functions.applyPromotionToProduct(product);
         console.log(res);
-        // setUpdatedPrice();
+        const updatedProduct = await user.functions.getProductById(product._id);
+        setUpdatedPrice(updatedProduct.price.value);
     }
 
     return (
