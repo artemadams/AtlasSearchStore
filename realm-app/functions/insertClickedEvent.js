@@ -5,8 +5,7 @@ exports = function(product){
   const eventsLog = context.services.get("mongodb-atlas").db("mongoshop").collection("eventsLog");
 
   return eventsLog.insertOne({"action": "clicked", 
-              "params": {"item_id": product.item_id, 
-                        "item_name": product.item_name, 
+              "params": {"product": product, 
                         "date": new Date()}})
         .then(result => {
           if(result) {
