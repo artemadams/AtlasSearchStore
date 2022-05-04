@@ -11,6 +11,7 @@ exports = function(product){
         .then(result => {
           if(result) {
             console.log(`Docs modified: ${result.modifiedCount}.`);
+            products.findOne ({_id: product._id}).then(item => {result.product = item});
             
         } else {
           console.log("No document was modified.");
