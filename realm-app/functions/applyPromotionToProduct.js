@@ -1,5 +1,5 @@
 exports = function(arg){
-  console.log(`arg : ${JSON,stringify(arg)}.`);
+  console.log(`arg : ${JSON.stringify(arg)}.`);
 
   
   if(!!!product && !!!product._id) return false;
