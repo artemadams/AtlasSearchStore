@@ -1,14 +1,21 @@
 [
     {
-        "name": "addProduct",
+        "name": "syns",
         "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
+        "run_as_system": true
     },
     {
-        "name": "updateProductCatalog",
+        "name": "applyPromotionToProduct",
         "private": false
+    },
+    {
+        "name": "getProductsDev",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "mostSearchedTerms",
+        "private": true
     },
     {
         "name": "createUser",
@@ -20,31 +27,14 @@
         "run_as_system": true
     },
     {
-        "name": "applyPromotionToProduct",
-        "private": false
-    },
-    {
-        "name": "mostSearchedTerms",
-        "private": true
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "autocompleteNames",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "syns",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProductsFacets",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "resetFunc",
-        "private": true
     },
     {
         "name": "autocompleteNamesDev",
@@ -55,9 +45,19 @@
         "private": true
     },
     {
-        "name": "getProducts",
+        "name": "updateProductCatalog",
+        "private": false
+    },
+    {
+        "name": "addProduct",
         "private": false,
-        "run_as_system": true
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
+    },
+    {
+        "name": "resetFunc",
+        "private": true
     },
     {
         "name": "getProductsGQL",
@@ -70,7 +70,7 @@
         "run_as_system": true
     },
     {
-        "name": "getProductsDev",
+        "name": "getProductsFacets",
         "private": false,
         "run_as_system": true
     }
