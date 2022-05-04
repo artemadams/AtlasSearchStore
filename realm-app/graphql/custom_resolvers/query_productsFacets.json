@@ -3,7 +3,7 @@
     "function_name": "getProductsFacets",
     "input_type": {
         "properties": {
-            "searchName": {
+            "searchTerm": {
                 "bsonType": "string"
             }
         },

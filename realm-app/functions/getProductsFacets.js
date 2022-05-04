@@ -1,5 +1,5 @@
 // This function is the endpoint's request handler.
-exports = async function({searchName}) {
+exports = async function({searchTerm}) {
   const products = context.services.get("mongodb-atlas").db("mongoshop").collection("products");
   
   console.log("searchName is: ", searchName);
