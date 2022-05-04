@@ -1,4 +1,6 @@
-exports = function(product){
+exports = function(arg){
+  console.log(`arg : ${JSON,stringify(arg)}.`);
+
   
   if(!!!product && !!!product._id) return false;
 
