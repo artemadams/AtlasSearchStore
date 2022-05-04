@@ -20,7 +20,7 @@ const Product = ({ product }) => {
 
     useEffect(async () => {
         let user = await getUser();
-        user.functions.insertClickEvent(product);
+        user.functions.insertClickedEvent(product);
     });
 
     let ProdDescriptionComponent = (
