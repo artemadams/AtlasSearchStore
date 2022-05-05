@@ -1,1 +1,235 @@
-{"exportVersion":6,"dashboards":{"dashboard-1":{"description":"MongoShop Dashboard  - Hackathon","embedding":{},"filters":[],"layout":[{"i":"item-1","w":3,"h":2,"x":0,"y":2},{"i":"item-2","w":3,"h":2,"x":0,"y":0},{"i":"item-3","w":3,"h":2,"x":3,"y":0}],"title":"MongoShop Dashboard"}},"items":{"item-1":{"calculatedFields":[],"channels":{"x":{"channelType":"aggregation","field":"count","inferredType":"Number","type":"quantitative","aggregate":"sum"},"y":{"channelType":"category","field":"_id.query","inferredType":"String","type":"nominal","isBinning":false}},"chartType":"Grouped Bar","convertedFields":[],"customisations":{"options":{},"conditionalFormatting":[],"axes":{"x":{}},"channels":{"x":{"labelOverride":{"enabled":true,"value":"searches"},"numberFormatting":{"enabled":true,"value":"Default"}},"y":{"labelOverride":{"enabled":true,"value":"categories"}}}},"dashboardId":"dashboard-1","dataSourceId":"data-source-1","description":"","filters":[],"iconValue":"bar-grouped","interactiveFiltering":"highlight","itemType":"chart","lookupFields":[],"meta":{},"missedFields":[],"query":null,"queryId":null,"reductions":{},"sample":false,"title":"Most searched categories","embedding":{}},"item-2":{"calculatedFields":[],"channels":{"text":{"channelType":"category","field":"_id.query","inferredType":"String","type":"nominal","isBinning":false},"size":{"channelType":"aggregation","field":"count","inferredType":"Number","type":"quantitative","aggregate":"sum"}},"chartType":"Word Cloud","convertedFields":[],"customisations":{"options":{},"axes":{},"channels":{"text":{},"size":{"numberFormatting":{"enabled":true,"value":"Default"}}},"conditionalFormatting":[]},"dashboardId":"dashboard-1","dataSourceId":"data-source-2","description":"","filters":[],"iconValue":"word-cloud","interactiveFiltering":"highlight","itemType":"chart","lookupFields":[],"meta":{},"missedFields":[],"query":null,"queryId":null,"reductions":{},"sample":false,"title":"Most searched terms","embedding":{}},"item-3":{"calculatedFields":[],"channels":{"value":{"channelType":"aggregation","field":"count","inferredType":"Number","type":"quantitative","aggregate":"sum"},"label":{"channelType":"category","field":"_id","inferredType":"String","type":"nominal","isBinning":false,"allOthers":true}},"chartType":"Donut","convertedFields":[],"customisations":{"options":{"dataValueLabels":{"enabled":false,"value":"value"}},"axes":{},"channels":{"value":{"labelOverride":{"enabled":true,"value":"# times"},"numberFormatting":{"enabled":true,"value":"Default"}},"label":{"labelOverride":{"enabled":true,"value":"Product name"}}},"conditionalFormatting":[]},"dashboardId":"dashboard-1","dataSourceId":"data-source-3","description":"","filters":[],"iconValue":"donut","interactiveFiltering":"highlight","itemType":"chart","lookupFields":[],"meta":{},"missedFields":[],"query":null,"queryId":null,"reductions":{},"sample":false,"title":"Most clicked products","embedding":{}}},"dataSources":{"data-source-1":{"alias":"mongoshop.mostSearchedCategories","collection":"mostSearchedCategories","database":"mongoshop","deployment":"MongoStore","sourceType":"cluster"},"data-source-2":{"alias":"mongoshop.mostSearchedTerms","collection":"mostSearchedTerms","database":"mongoshop","deployment":"MongoStore","sourceType":"cluster"},"data-source-3":{"alias":"mongoshop.mostClickedProducts","collection":"mostClickedProducts","database":"mongoshop","deployment":"MongoStore","sourceType":"cluster"}},"queries":{}}
+{
+    "exportVersion": 6,
+    "dashboards": {
+        "dashboard-1": {
+            "description": "MongoShop Dashboard  - Hackathon",
+            "embedding": {},
+            "filters": [],
+            "layout": [{
+                "i": "item-1",
+                "w": 3,
+                "h": 2,
+                "x": 0,
+                "y": 2
+            }, {
+                "i": "item-2",
+                "w": 3,
+                "h": 2,
+                "x": 0,
+                "y": 0
+            }, {
+                "i": "item-3",
+                "w": 3,
+                "h": 2,
+                "x": 3,
+                "y": 0
+            }],
+            "title": "MongoShop Dashboard"
+        }
+    },
+    "items": {
+        "item-1": {
+            "calculatedFields": [],
+            "channels": {
+                "x": {
+                    "channelType": "aggregation",
+                    "field": "count",
+                    "inferredType": "Number",
+                    "type": "quantitative",
+                    "aggregate": "sum"
+                },
+                "y": {
+                    "channelType": "category",
+                    "field": "_id.query",
+                    "inferredType": "String",
+                    "type": "nominal",
+                    "isBinning": false
+                }
+            },
+            "chartType": "Grouped Bar",
+            "convertedFields": [],
+            "customisations": {
+                "options": {},
+                "conditionalFormatting": [],
+                "axes": {
+                    "x": {}
+                },
+                "channels": {
+                    "x": {
+                        "labelOverride": {
+                            "enabled": true,
+                            "value": "searches"
+                        },
+                        "numberFormatting": {
+                            "enabled": true,
+                            "value": "Default"
+                        }
+                    },
+                    "y": {
+                        "labelOverride": {
+                            "enabled": true,
+                            "value": "categories"
+                        }
+                    }
+                }
+            },
+            "dashboardId": "dashboard-1",
+            "dataSourceId": "data-source-1",
+            "description": "",
+            "filters": [],
+            "iconValue": "bar-grouped",
+            "interactiveFiltering": "highlight",
+            "itemType": "chart",
+            "lookupFields": [],
+            "meta": {},
+            "missedFields": [],
+            "query": null,
+            "queryId": null,
+            "reductions": {},
+            "sample": false,
+            "title": "Most searched categories",
+            "embedding": {}
+        },
+        "item-2": {
+            "calculatedFields": [],
+            "channels": {
+                "text": {
+                    "channelType": "category",
+                    "field": "_id.query",
+                    "inferredType": "String",
+                    "type": "nominal",
+                    "isBinning": false
+                },
+                "size": {
+                    "channelType": "aggregation",
+                    "field": "count",
+                    "inferredType": "Number",
+                    "type": "quantitative",
+                    "aggregate": "sum"
+                }
+            },
+            "chartType": "Word Cloud",
+            "convertedFields": [],
+            "customisations": {
+                "options": {},
+                "axes": {},
+                "channels": {
+                    "text": {},
+                    "size": {
+                        "numberFormatting": {
+                            "enabled": true,
+                            "value": "Default"
+                        }
+                    }
+                },
+                "conditionalFormatting": []
+            },
+            "dashboardId": "dashboard-1",
+            "dataSourceId": "data-source-2",
+            "description": "",
+            "filters": [],
+            "iconValue": "word-cloud",
+            "interactiveFiltering": "highlight",
+            "itemType": "chart",
+            "lookupFields": [],
+            "meta": {},
+            "missedFields": [],
+            "query": null,
+            "queryId": null,
+            "reductions": {},
+            "sample": false,
+            "title": "Most searched terms",
+            "embedding": {}
+        },
+        "item-3": {
+            "calculatedFields": [],
+            "channels": {
+                "value": {
+                    "channelType": "aggregation",
+                    "field": "count",
+                    "inferredType": "Number",
+                    "type": "quantitative",
+                    "aggregate": "sum"
+                },
+                "label": {
+                    "channelType": "category",
+                    "field": "_id",
+                    "inferredType": "String",
+                    "type": "nominal",
+                    "isBinning": false,
+                    "allOthers": true
+                }
+            },
+            "chartType": "Donut",
+            "convertedFields": [],
+            "customisations": {
+                "options": {
+                    "dataValueLabels": {
+                        "enabled": false,
+                        "value": "value"
+                    }
+                },
+                "axes": {},
+                "channels": {
+                    "value": {
+                        "labelOverride": {
+                            "enabled": true,
+                            "value": "# times"
+                        },
+                        "numberFormatting": {
+                            "enabled": true,
+                            "value": "Default"
+                        }
+                    },
+                    "label": {
+                        "labelOverride": {
+                            "enabled": true,
+                            "value": "Product name"
+                        }
+                    }
+                },
+                "conditionalFormatting": []
+            },
+            "dashboardId": "dashboard-1",
+            "dataSourceId": "data-source-3",
+            "description": "",
+            "filters": [],
+            "iconValue": "donut",
+            "interactiveFiltering": "highlight",
+            "itemType": "chart",
+            "lookupFields": [],
+            "meta": {},
+            "missedFields": [],
+            "query": null,
+            "queryId": null,
+            "reductions": {},
+            "sample": false,
+            "title": "Most clicked products",
+            "embedding": {}
+        }
+    },
+    "dataSources": {
+        "data-source-1": {
+            "alias": "mongoshop.mostSearchedCategories",
+            "collection": "mostSearchedCategories",
+            "database": "mongoshop",
+            "deployment": "MongoStore",
+            "sourceType": "cluster"
+        },
+        "data-source-2": {
+            "alias": "mongoshop.mostSearchedTerms",
+            "collection": "mostSearchedTerms",
+            "database": "mongoshop",
+            "deployment": "MongoStore",
+            "sourceType": "cluster"
+        },
+        "data-source-3": {
+            "alias": "mongoshop.mostClickedProducts",
+            "collection": "mostClickedProducts",
+            "database": "mongoshop",
+            "deployment": "MongoStore",
+            "sourceType": "cluster"
+        }
+    },
+    "queries": {}
+}
