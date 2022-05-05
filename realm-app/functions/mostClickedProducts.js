@@ -1,22 +1,32 @@
 exports = function() {
-  /*
-    A Scheduled Trigger will always call a function without arguments.
-    Documentation on Triggers: https://docs.mongodb.com/realm/triggers/overview/
+  const eventsLog = context.services.get("mongodb-atlas").db("mongoshop").collection("eventsLog");
 
-    Functions run by Triggers are run as System users and have full access to Services, Functions, and MongoDB Data.
+  const matchStage = {$match: {
+                       'action': 'clicked'
+                      }};
+                      
+  const groupStage = {$group: {
+                       _id: '$params.product.name',
+                       count: {
+                        $sum: 1
+                       }
+                      }};
 
-    Access a mongodb service:
-    const collection = context.services.get(<SERVICE_NAME>).db("<DB_NAME>").collection("<COLL_NAME>");
-    const doc = collection.findOne({ name: "mongodb" });
 
-    Note: In Atlas Triggers, the service name is defaulted to the cluster name.
+  const sortStage = {$sort: { count: -1 }};
 
-    Call other named functions if they are defined in your application:
-    const result = context.functions.execute("function_name", arg1, arg2);
+  const limitStage = {$limit: 10};
 
-    Access the default http client and execute a GET request:
-    const response = context.http.get({ url: <URL> })
+  const mergeStage = {$merge: {
+                       into: 'mostClickedProducts',
+                       on: '_id',
+                       whenMatched: 'merge',
+                       whenNotMatched: 'insert'
+                      }};
 
-    Learn more about http client here: https://docs.mongodb.com/realm/functions/context/#context-http
-  */
+  const pipeline = [matchStage, groupStage, sortStage, limitStage, mergeStage];
+
+  eventsLog.aggregate(pipeline);
+
+  return true;
 };
