@@ -82,6 +82,18 @@ exports = async function(payload, response) {
         };
       calledAggregation[0].$search.compound.should.push(textObject);
     }
+    //adding synonyms
+    if (searchTerm){ 
+      const textObjectSyns = {
+          text:{
+            query:searchTerm,
+            path: ['descriptions','name'],
+            synonyms: 'productSynonyms'
+          }
+        };
+      calledAggregation[0].$search.compound.should.push(textObjectSyns);
+    }
+    
     if (showSponsored){
       const scoreModifier =  {
         text:{

@@ -1,0 +1,17 @@
+{
+    "id": "627345150d66c823864db959",
+    "name": "mostClickedProducts",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "*/1 * * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "mostClickedProducts"
+            }
+        }
+    }
+}
