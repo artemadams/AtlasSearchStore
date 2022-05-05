@@ -1,5 +1,25 @@
 [
     {
+        "route": "/categories",
+        "http_method": "GET",
+        "function_name": "getCategories",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false
+    },
+    {
+        "route": "/productsFacets",
+        "http_method": "GET",
+        "function_name": "getProductsFacets",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": false,
+        "create_user_on_auth": false,
+        "disabled": false
+    },
+    {
         "route": "/names",
         "http_method": "GET",
         "function_name": "autocompleteNames",
@@ -43,26 +63,6 @@
         "route": "/products",
         "http_method": "POST",
         "function_name": "getProducts",
-        "validation_method": "NO_VALIDATION",
-        "respond_result": true,
-        "fetch_custom_user_data": false,
-        "create_user_on_auth": false,
-        "disabled": false
-    },
-    {
-        "route": "/categories",
-        "http_method": "GET",
-        "function_name": "getCategories",
-        "validation_method": "NO_VALIDATION",
-        "respond_result": true,
-        "fetch_custom_user_data": false,
-        "create_user_on_auth": false,
-        "disabled": false
-    },
-    {
-        "route": "/productsFacets",
-        "http_method": "GET",
-        "function_name": "getProductsFacets",
         "validation_method": "NO_VALIDATION",
         "respond_result": true,
         "fetch_custom_user_data": false,
