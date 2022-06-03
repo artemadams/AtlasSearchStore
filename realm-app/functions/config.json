@@ -1,57 +1,7 @@
 [
     {
-        "name": "getCategories",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "applyPromotionToProduct",
-        "private": false
-    },
-    {
-        "name": "syns",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getProducts",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "autocompleteNames",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "addProduct",
-        "private": false,
-        "can_evaluate": {
-            "%%user.custom_data.isEditor": true
-        }
-    },
-    {
-        "name": "getProductsGQL",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "mostSearchedTerms",
+        "name": "resetFunc",
         "private": true
-    },
-    {
-        "name": "createUser",
-        "private": true
-    },
-    {
-        "name": "getProductsDev",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "insertClickedEvent",
-        "private": false,
-        "run_as_system": true
     },
     {
         "name": "getProductsFacets",
@@ -63,13 +13,18 @@
         "private": false
     },
     {
-        "name": "mostClickedProducts",
-        "private": true,
+        "name": "autocompleteNames",
+        "private": false,
         "run_as_system": true
     },
     {
-        "name": "mostSearchedCategories",
-        "private": true
+        "name": "getCategories",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductById",
+        "private": false
     },
     {
         "name": "getProductsOrigBackup",
@@ -77,15 +32,60 @@
         "run_as_system": true
     },
     {
+        "name": "mostClickedProducts",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductsGQL",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "addProduct",
+        "private": false,
+        "can_evaluate": {
+            "%%user.custom_data.isEditor": true
+        }
+    },
+    {
+        "name": "mostSearchedTerms",
+        "private": true
+    },
+    {
+        "name": "getProducts",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "getProductsDev",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "mostSearchedCategories",
+        "private": true
+    },
+    {
         "name": "autocompleteNamesDev",
         "private": false
     },
     {
-        "name": "getProductById",
+        "name": "insertClickedEvent",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "syns",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "applyPromotionToProduct",
         "private": false
     },
     {
-        "name": "resetFunc",
+        "name": "createUser",
         "private": true
     }
 ]
