@@ -12,8 +12,10 @@ const Product = ({ product }) => {
         description = product.main_description;
     }
     if (product.score) {
-        score = Object.values(product.score)[0];
-        score = score.toString().slice(0, 5);
+        score = product.score;
+        if (score) {
+            score = score.toString().slice(0, 4);
+        }
     }
 
     let price = Object.values(product.price.value)[0];
